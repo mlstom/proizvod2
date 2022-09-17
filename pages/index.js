@@ -11,9 +11,6 @@ export default function Home() {
   const [nema, setnema] = useState(false)
 
 
-  useEffect(() => {
-    setemail(true)
-  }, [])
   const emailSaving = async () => {
     if (mail) {
       fetch('/api/users', {
